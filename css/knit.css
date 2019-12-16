@@ -6,7 +6,7 @@ body{
     background: linear-gradient(0deg, rgba(234,232,255,1) 0%, rgba(202,172,192,1) 100%) no-repeat; color: black; display: block; width: 1000px; margin-right: auto; margin-left: auto; margin-top: 0;
     font-family: "Corbel", sans-serif; }
 nav{float: none; width: 1000px; text-align: right; font-weight: bold; font-size: large; height: 3em; position: fixed; background-color: #eae9ff;}
-nav ul{padding: 0;}
+nav ul{padding: 0; margin-top: 0}
 nav li{display: inline; padding-top: 0.5em; padding-bottom: 0.5em; padding-left: 0.75em; padding-right: 0.75em;}
 
 nav a{text-decoration: none; color: black}
@@ -32,7 +32,7 @@ h1{margin-left:50%; margin-right: auto; width: 50%; text-align: center; }
 #closehats{height: 200px; background-image: url("../img/closeHats.jpg"); background-size: 50% 142%;  padding: 0; background-repeat: no-repeat }
 #sparkleClose{height: 200px; background-image: url("../img/sparkleClose.jpg"); background-size: 50% 142%;  padding: 0; background-repeat: no-repeat }
 #navspacer{height: 3em}
-#titleleft{float: left; padding: 0;}
+#titleleft{float: left; padding: 0; }
 form{width: 50%;
     font-weight: bold; height: 450px;
     margin: auto;
@@ -48,7 +48,7 @@ button{width:20%; margin-right: 40%; margin-left: 40%}
 footer{text-align: center; float: bottom; margin-top: 1em}
 footer div a{font-weight: bold; margin-left: 3em; margin-right: 3em; text-decoration: none; color: black}
 footer div a:hover{color: #3F2860; border-style: solid; border-top: transparent; border-left: transparent; border-right: transparent; border-bottom-color: #542344; text-decoration: none}
-#ladyHero{height: 300px; background-size: 100% 100%; background-image: url("../img/lady.jpg");width: 50%;float: left; margin-right:1em;  margin-left: 1em;}
+#ladyHero{height: 300px; background-size: 100% 100%; background-image: url("../img/lady.jpg");width: 50%;float: left; margin-right:1em;  margin-left: 1em; margin-top: 3.8em}
 .textWrapFix{width:50%; margin-right: 0; margin-left: 50%;}
 .textWrapFix p{margin-top: 0; padding-top: 0}
 .paragraphMarginFix{margin-left: 1em; margin-right: 1em}
@@ -71,16 +71,42 @@ footer div a:hover{color: #3F2860; border-style: solid; border-top: transparent;
 /**Smartphone View**/
 @media only screen and (max-width: 37.5em)
 {label{float: none; text-align: left;}
-    input[type=submit]{margin-left: 0}
-    h1{font-size: 2em; padding-top: 0.25em; padding-left: 1.5em; width: 85%; text-align: center;}
-    nav a{padding: 0.5em; max-width: 10em; float: left;  margin-left: 2em; border: 3px #CCCCCC outset;  }
-    nav a:active{border:3px #666666 inset}
-    li{font-size: 100%}
 
-    #yarnhero, #ladyhero, #closehats, #sparkleClose{background-image: none; height: 0;}
-    footer{padding: 0.5em; margin: 0;}
+    input[type=submit]{margin-left: 0}
+    h1{font-size: 2em; padding-top: 0.25em; padding-left: 1.5em; padding-right: 1.5em; width:80%; text-align: center; margin-left: 0; margin-top: 10em}
+    h2{font-size: 2em; padding-top: 0.25em; padding-left: 1.5em; padding-right: 1.5em; width:80%; text-align: center; margin-left: 0; margin-top: 7em}
+    p{padding: 0; width: 27em; margin: 0; text-align: center}
+    #contactParagraph{font-size: large; width: 90%; margin-left: 1em; margin-right: 1em}
+    nav{float: none; max-width: 37.5em; width: 300px; text-align: center; font-weight: bold; font-size: large; height: 3em; background-color: #eae9ff; position: absolute}
+    nav li{display: block; padding: 0}
+    span h1{margin-top: 0}
+    .textWrapFix{margin-left: 0}
+    nav a{ border: 3px #CCCCCC outset;  width: 17.3em;  margin-bottom: 10px; height: 2em}
+    nav a:active{border:3px #666666 inset}
+    li div a{border: none; margin-left: 3.7em}
+    li{font-size: 100%}
+    body{background-color: #eae9ff; width: 25.7em; margin: 0}
+    #wrapper{background-color: #eae9ff}
+    #yarnhero, #closehats, #sparkleClose{background-image: none; height: 0; width: 0}
+    #ladyHero{height: 0; background-image: none; background-size: 0}
+    footer{padding: 0.5em;  width: 25em; margin-right: 0}
+    footer div{display: none}
     #mobile{display: inline}
     #desktop{display: none; }
-    #yarntext{margin-top: 10em}
-    #yarntext h1, p{float: left; }
+    #yarntext{height: 0; }
+    #yarntext p{display: none}
+    #secondyarntext p{display: none}
+
+
+    #secondyarntext{height: 0}
+    div span h1{ margin-top: 6em; margin-left: 6%}
+    span footer{margin-top: 10em}
+    button{width: 5em; margin-left: 0}
+    #greenyarntext, #sunsetyarntext{height:0;}
+    .styleMobileFix img{margin-top: 15em; margin-left: auto; margin-right: auto}
+    .styleParagraphFix p{margin-top: 30em; float:right}
+    .aboutParagraphFix p, h1{margin-top: 17em}
+    .indexParagraphFix p, h1{margin-top: 5em}
+    div h1{display:none}
+
 }
