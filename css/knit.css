@@ -11,15 +11,21 @@ nav li{display: inline; padding-top: 0.5em; padding-bottom: 0.5em; padding-left:
 
 nav a{text-decoration: none; color: black}
 nav a:hover{color: #3F2860; border-style:solid; border-top: transparent; border-left: transparent; border-right: transparent; text-decoration: none}
-
+p{padding-bottom: 1.5em; padding-top: 1.5em}
 h1{margin-left:50%; margin-right: auto; width: 50%; text-align: center; }
 #news p{margin-bottom: 3em}
 #wrapper{background-color: #eae9ff}
 #yarnhero{height: 300px; background-image: url("../img/yarnhero.jpg") ; background-size: 100%    100%; margin-bottom: 1em}
 #yarntext{height: 200px; background-size: 100%    100%; background-color: #542344; text-align: center; color: white; width: 50%; float: left; margin-right: 1em; margin-bottom: 1em }
-#secondyarntext{height: 200px; background-size: 100%    100%; background-color: #4F5D75; text-align: right; color: white; width: 50%;     float: left; margin-right:1em;  }
+#secondyarntext{height: 200px; background-size: 100%    100%; background-color: #4F5D75; text-align: right; color: white; width: 50%;float: left; margin-right:1em; margin-bottom: 1em}
+#greenyarntext{height: 200px; background-size: 100%    100%; background-color: #DFF2D8; text-align: right; color: #7E7E7E; width: 50%;float: left; margin-right:1em; margin-bottom: 1em}
+.titleCenter h1{margin-top: 14%; }
+#sunsetyarntext{height: 200px; background-size: 100%    100%; background-color: #FF564D; text-align: right; color: white; width: 50%;float: left; margin-right:1em; margin-bottom: 1em}
 #yarntext h1{margin-left: 1%; margin-right: 1%; padding: 0; width: 50%; float: right; color: white}
-
+    #yarntext img{height: 200px; float: left; margin-left: 10px; padding-top: 10px; padding-bottom: 4px}
+#secondyarntext img{height: 200px; float: left; margin-left: 10px; padding-top: 4px; padding-bottom: 4px}
+#greenyarntext img{height: 200px; float: left; margin-left: 10px; padding-top: 10px; padding-bottom: 4px}
+#sunsetyarntext img{height: 200px; float: left; margin-left: 10px; padding-top: 10px; padding-bottom: 4px}
 #yarntext p{padding: 0; width: 50%; float: right; text-align: center; color: white}
 #secondyarntext h1{margin-left: 1%; margin-right: 1%; padding: 0; width: 50%; float: right;}
 #secondyarntext p{padding: 0; width: 50%; float: right; text-align: center}
@@ -39,6 +45,42 @@ label{float: left; display: block; text-align: right; width:10em; padding-right:
 h2{font-weight: bolder; text-align: center}
 input,textarea{margin-top: 1em; margin-bottom: 1em; float: top; display: block; }
 button{width:20%; margin-right: 40%; margin-left: 40%}
-footer{text-align: center; float: bottom; margin-top: 3em}
+footer{text-align: center; float: bottom; margin-top: 1em}
 footer div a{font-weight: bold; margin-left: 3em; margin-right: 3em; text-decoration: none; color: black}
 footer div a:hover{color: #3F2860; border-style: solid; border-top: transparent; border-left: transparent; border-right: transparent; border-bottom-color: #542344; text-decoration: none}
+#ladyHero{height: 300px; background-size: 100% 100%; background-image: url("../img/lady.jpg");width: 50%;float: left; margin-right:1em;  margin-left: 1em;}
+.textWrapFix{width:50%; margin-right: 0; margin-left: 50%;}
+.textWrapFix p{margin-top: 0; padding-top: 0}
+.paragraphMarginFix{margin-left: 1em; margin-right: 1em}
+/**Tablet View**/
+@media only screen and (max-width: 64em)
+{
+    body{margin: 0; padding: 0;}
+    #wrapper{min-width: 0; width: auto; margin: 0; padding: 0;}
+    header{padding-top: 1px}
+    main{padding-top: 0; padding-bottom: 2.5em; padding-left: 1em; margin: 0; font-size: 90%; float: none}
+    nav{float: none; width: auto; padding-left: 2em;}
+    nav a{padding: 0.2em; margin-left: 0.3em; float: left; width: 23%;}
+    h2, h3, p, dl{padding-left: 2em; padding-right: 2em;}
+    main ul{margin-left: 2em;}
+    .floatleft{margin-left: 2em; margin-bottom: 1em;}
+    .clear{margin-left: 2em; margin-bottom: 1em;}
+    #yarnhero, #ladyhero{height: 150px; width: 80%; margin-left: auto; margin-right: auto;}
+
+}
+/**Smartphone View**/
+@media only screen and (max-width: 37.5em)
+{label{float: none; text-align: left;}
+    input[type=submit]{margin-left: 0}
+    h1{font-size: 2em; padding-top: 0.25em; padding-left: 1.5em; width: 85%; text-align: center;}
+    nav a{padding: 0.5em; max-width: 10em; float: left;  margin-left: 2em; border: 3px #CCCCCC outset;  }
+    nav a:active{border:3px #666666 inset}
+    li{font-size: 100%}
+
+    #yarnhero, #ladyhero, #closehats, #sparkleClose{background-image: none; height: 0;}
+    footer{padding: 0.5em; margin: 0;}
+    #mobile{display: inline}
+    #desktop{display: none; }
+    #yarntext{margin-top: 10em}
+    #yarntext h1, p{float: left; }
+}
