@@ -2,41 +2,68 @@
 
 body{
 
-    background: rgb(234,232,255) ;
-    background: linear-gradient(0deg, rgba(234,232,255,1) 0%, rgba(202,172,192,1) 100%) no-repeat; color: black; display: block; width: 1000px; margin-right: auto; margin-left: auto; margin-top: 0;
-    font-family: "Corbel", sans-serif; }
-nav{float: none; width: 1000px; text-align: right; font-weight: bold; font-size: large; height: 3em; position: fixed; background-color: #eae9ff;}
-nav ul{padding: 0; margin-top: 0}
+    background: rgb(238, 238, 255);
+    background: linear-gradient(0deg, rgb(172, 167, 255) 0%, rgb(103, 110, 215) 100%) no-repeat; color: #000000; display: block; width: 1000px; margin-right: auto; margin-left: auto; margin-top: 0;
+    font-family: "Javanese Text", serif; }
+nav{float: none; width: 1000px; text-align: right; font-weight: bold; font-size: large; position: fixed; background-color: #a6a6ff; border:1px black solid;
+    z-index: 1;}
+nav ul{padding: 0; margin-top: 0; height: 54px;}
 nav li{display: inline; padding-top: 0.5em; padding-bottom: 0.5em; padding-left: 0.75em; padding-right: 0.75em;}
 
 nav a{text-decoration: none; color: black}
 nav a:hover{color: #3F2860; border-style:solid; border-top: transparent; border-left: transparent; border-right: transparent; text-decoration: none}
 p{padding-bottom: 1.5em; padding-top: 1.5em}
 h1{margin-left:50%; margin-right: auto; width: 50%; text-align: center; }
-#news p{margin-bottom: 3em}
-#wrapper{background-color: #eae9ff}
-#yarnhero{height: 300px; background-image: url("../img/yarnhero.jpg") ; background-size: 100%    100%; margin-bottom: 1em}
+.news p{margin-bottom: 2em; line-height: 200%; padding-top: 0;}
+#wrapper{background-color: #a6a6ff;
+}
+#yarnhero{height: 372px; background-image: url("../img/acoustic.jpg") ; background-size: 100%    100%; margin-bottom: 1em}
 #yarntext{height: 200px; background-size: 100%    100%; background-color: #542344; text-align: center; color: white; width: 50%; float: left; margin-right: 1em; margin-bottom: 1em }
-#secondyarntext{height: 200px; background-size: 100%    100%; background-color: #4F5D75; text-align: right; color: white; width: 50%;float: left; margin-right:1em; margin-bottom: 1em}
+#secondyarntext{height: 200px; background-size: 100%    100%; background-color: #4F5D75; text-align: right; color: white; width: 50%;float: left; margin-right:1em; margin-bottom: 1em;}
 #greenyarntext{height: 200px; background-size: 100%    100%; background-color: #DFF2D8; text-align: right; color: #7E7E7E; width: 50%;float: left; margin-right:1em; margin-bottom: 1em}
-.titleCenter h1{margin-top: 14%; }
+.titleCenter h4{margin-top: 10%; }
 #sunsetyarntext{height: 200px; background-size: 100%    100%; background-color: #FF564D; text-align: right; color: white; width: 50%;float: left; margin-right:1em; margin-bottom: 1em}
 #yarntext h1{margin-left: 1%; margin-right: 1%; padding: 0; width: 50%; float: right; color: white}
-    #yarntext img{height: 200px; float: left; margin-left: 10px; padding-top: 10px; padding-bottom: 4px}
-#secondyarntext img{height: 200px; float: left; margin-left: 10px; padding-top: 4px; padding-bottom: 4px}
+#yarntext img{height: 200px; float: left; margin-left: 10px; padding-top: 10px; padding-bottom: 4px}
+#secondyarntext img{height: 200px; float: left; margin-left: 10px; padding-top: 10px; padding-bottom: 4px}
+#secondyarntext h4{
+    text-align: center;
+}
+#secondyarntext audio{
+    margin-right: 28px;
+}
 #greenyarntext img{height: 200px; float: left; margin-left: 10px; padding-top: 10px; padding-bottom: 4px}
+#greenyarntext h4{
+    text-align: center;
+}
+#greenyarntext audio{
+    margin-right: 28px;
+}
 #sunsetyarntext img{height: 200px; float: left; margin-left: 10px; padding-top: 10px; padding-bottom: 4px}
+#sunsetyarntext h4{
+    text-align: center;
+}
+#sunsetyarntext audio{
+    margin-right: 28px;
+}
 #yarntext p{padding: 0; width: 50%; float: right; text-align: center; color: white}
 #secondyarntext h1{margin-left: 1%; margin-right: 1%; padding: 0; width: 50%; float: right;}
 #secondyarntext p{padding: 0; width: 50%; float: right; text-align: center}
-#closehats{height: 200px; background-image: url("../img/closeHats.jpg"); background-size: 50% 142%;  padding: 0; background-repeat: no-repeat }
-#sparkleClose{height: 200px; background-image: url("../img/sparkleClose.jpg"); background-size: 50% 142%;  padding: 0; background-repeat: no-repeat }
-#navspacer{height: 3em}
+#closehats{height: 200px; background-image: url("../img/pianoClose.jpg"); background-size: 50% 142%;  padding: 0; background-repeat: no-repeat }
+#sparkleClose{height: 200px; background-image: url("../img/sheetmusic.jpg"); background-size: 50% 142%;  padding: 0; background-repeat: no-repeat }
+#fandfCover{height: 200px; background-image: url("../img/family and friends.jpg"); background-size: 50% 142%;  padding: 0; background-repeat: no-repeat }
+#navspacer{height: 6.5em}
 #titleleft{float: left; padding: 0; }
 form{width: 50%;
     font-weight: bold; height: 450px;
     margin: auto;
 
+}
+audio{
+    width: 50%;
+    margin-top: 5%;
+    position:relative;
+    z-index: 0;
 }
 label{float: left; display: block; text-align: right; width:10em; padding-right: 1em;  }
 .labelWidthFix{margin: 0; width: 0}
@@ -52,6 +79,22 @@ footer div a:hover{color: #3F2860; border-style: solid; border-top: transparent;
 .textWrapFix{width:50%; margin-right: 0; margin-left: 50%;}
 .textWrapFix p{margin-top: 0; padding-top: 0}
 .paragraphMarginFix{margin-left: 1em; margin-right: 1em}
+#holidayTooltip #holidayTip {
+    visibility: hidden;
+    width: 250px;
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    font-size: 11pt;
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+#holidayTooltip:hover #holidayTip {
+    visibility: visible;
+}
 /**Tablet View**/
 @media only screen and (max-width: 64em)
 {
