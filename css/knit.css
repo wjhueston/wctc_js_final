@@ -14,15 +14,15 @@ nav a{text-decoration: none; color: black}
 nav a:hover{color: #3F2860; border-style:solid; border-top: transparent; border-left: transparent; border-right: transparent; text-decoration: none}
 p{padding-bottom: 1.5em; padding-top: 1.5em}
 h1{margin-left:50%; margin-right: auto; width: 50%; text-align: center; }
-.news p{margin-bottom: 2em; line-height: 200%; padding-top: 0;}
+.news p{margin-bottom: 2em; line-height: 180%; padding-top: 0;}
 #wrapper{background-color: #a6a6ff;
 }
 #yarnhero{height: 372px; background-image: url("../img/acoustic.jpg") ; background-size: 100%    100%; margin-bottom: 1em}
-#yarntext{height: 200px; background-size: 100%    100%; background-color: #542344; text-align: center; color: white; width: 50%; float: left; margin-right: 1em; margin-bottom: 1em }
-#secondyarntext{height: 200px; background-size: 100%    100%; background-color: #4F5D75; text-align: right; color: white; width: 50%;float: left; margin-right:1em; margin-bottom: 1em;}
-#greenyarntext{height: 200px; background-size: 100%    100%; background-color: #DFF2D8; text-align: right; color: #7E7E7E; width: 50%;float: left; margin-right:1em; margin-bottom: 1em}
+#yarntext{height: 206px; background-size: 100%    100%; background-color: #542344; text-align: center; color: white; width: 50%; float: left; margin-right: 1em; margin-bottom: 1em }
+#secondyarntext{height: 206px; background-size: 100%    100%; background-color: #4F5D75; text-align: right; color: white; width: 50%;float: left; margin-right:1em; margin-bottom: 1em;}
+#greenyarntext{height: 206px; background-size: 100%    100%; background-color: #DFF2D8; text-align: right; color: #7E7E7E; width: 50%;float: left; margin-right:1em; margin-bottom: 1em}
 .titleCenter h4{margin-top: 10%; }
-#sunsetyarntext{height: 200px; background-size: 100%    100%; background-color: #FF564D; text-align: right; color: white; width: 50%;float: left; margin-right:1em; margin-bottom: 1em}
+#sunsetyarntext{height: 206px; background-size: 100%    100%; background-color: #FF564D; text-align: right; color: white; width: 50%;float: left; margin-right:1em; margin-bottom: 1em}
 #yarntext h1{margin-left: 1%; margin-right: 1%; padding: 0; width: 50%; float: right; color: white}
 #yarntext img{height: 200px; float: left; margin-left: 10px; padding-top: 10px; padding-bottom: 4px}
 #secondyarntext img{height: 200px; float: left; margin-left: 10px; padding-top: 10px; padding-bottom: 4px}
@@ -54,10 +54,11 @@ h1{margin-left:50%; margin-right: auto; width: 50%; text-align: center; }
 #fandfCover{height: 200px; background-image: url("../img/family and friends.jpg"); background-size: 50% 142%;  padding: 0; background-repeat: no-repeat }
 #navspacer{height: 6.5em}
 #titleleft{float: left; padding: 0; }
-form{width: 50%;
+form{width: 40%;
     font-weight: bold; height: 450px;
     margin: auto;
-
+    margin-bottom: 5em;
+    align-content: center;
 }
 audio{
     width: 50%;
@@ -65,24 +66,24 @@ audio{
     position:relative;
     z-index: 0;
 }
-label{float: left; display: block; text-align: right; width:10em; padding-right: 1em;  }
+label{padding-right: 1em;}
 .labelWidthFix{margin: 0; width: 0}
 .labelHeightFix{padding-top:10%;}
 #contactParagraph{font-size: large; width: 60%; margin-left: auto; margin-right: auto}
 h2{font-weight: bolder; text-align: center}
-input,textarea{margin-top: 1em; margin-bottom: 1em; float: top; display: block; }
+input,textarea{margin-top: 1em; margin-bottom: 1em; width:2.5em; margin-right: 3em;}
 button{width:20%; margin-right: 40%; margin-left: 40%}
 footer{text-align: center; float: bottom; margin-top: 1em}
 footer div a{font-weight: bold; margin-left: 3em; margin-right: 3em; text-decoration: none; color: black}
 footer div a:hover{color: #3F2860; border-style: solid; border-top: transparent; border-left: transparent; border-right: transparent; border-bottom-color: #542344; text-decoration: none}
-#ladyHero{height: 300px; background-size: 100% 100%; background-image: url("../img/lady.jpg");width: 50%;float: left; margin-right:1em;  margin-left: 1em; margin-top: 3.8em}
+#ladyHero{width: 96.5%; background-size: 100% 100%; background-image: url("../img/qaHero.jpg");float: left; margin-right:1em;  margin-left: 1em; margin-top: 3.8em; height: 300px; margin-bottom: 1em;}
 .textWrapFix{width:50%; margin-right: 0; margin-left: 50%;}
 .textWrapFix p{margin-top: 0; padding-top: 0}
 .paragraphMarginFix{margin-left: 1em; margin-right: 1em}
-#holidayTooltip #holidayTip {
+#titleleft #punTip {
     visibility: hidden;
-    width: 250px;
-    background-color: red;
+    width: 150px;
+    background-color: #542344;
     color: #fff;
     text-align: center;
     padding: 5px 0;
@@ -92,8 +93,18 @@ footer div a:hover{color: #3F2860; border-style: solid; border-top: transparent;
     position: absolute;
     z-index: 1;
 }
-#holidayTooltip:hover #holidayTip {
+#titleleft:hover #punTip {
     visibility: visible;
+}
+.aboutParagraphFix p, ul{
+    padding-top: 0;
+}
+h5{
+    font-weight: bolder;
+}
+table{
+    width: 100%;
+
 }
 /**Tablet View**/
 @media only screen and (max-width: 64em)

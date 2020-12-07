@@ -5,7 +5,7 @@
     <meta name="description" content="Take a quick survey for me so I know what kind of hat to send you!">
     <link rel="canonical" content="https://wjhueston-final.netlify.com/contact.html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Get In Touch</title>
+    <title>The Acetabulums: Contact</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="css/knit.css" rel ="stylesheet">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
@@ -15,73 +15,40 @@
     <div id="wrapper">
         <nav>
             <ul>
-                <li><div><a href="index.html"><span id="titleleft"><img src="img/logo.png" height="30px" ></span></a></div></li>
+                <li><div><a href="index.html"><span id="titleleft"><img src="img/logo.png" height="90" ><span id="punTip">A real 'hip' band!</span></span></a></div></li>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="styles.html">Styles</a></li>
+                <li><a href="styles.html">Music</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="about.html">Q&A</a></li>
             </ul>
         </nav>
         <main>
         <div id="navspacer"></div>
-        <h2>Contact Me!</h2>
-        <div id="contactParagraph">I want to hear from you! If you submit a request for a hat, I will hopefully be able to contact you within a week to discuss details for your hat. Everything that is required to submit a request is marked with an asterisk.</div><br/>
-        <form action="" method="get">
-            <label>Name:</label><div class="labelWidthFix"><label for="myName"></label></div><input id="myName" name="myName" required>
-            <label>Address:</label><div class="labelWidthFix"><label for="myAddress"></label></div><input id="myAddress" name="myAddress" required>
-            <label>Phone:</label><div class="labelWidthFix"><label for="myPhone"></label></div><input id="myPhone" name="myPhone" required type="tel">
-            <label>Email:</label><div class="labelWidthFix"><label for="myEmail"></label></div> <input id="myEmail" name="myEmail" required type="email">
-            <label for="myColor">Favorite Color:</label>
-            <select id="myColor" name="myColor" required>
-                <option value="red">Red</option>
-                <option value="orange">Orange</option>
-                <option value="yellow">Yellow</option>
-                <option value="green">Green</option>
-                <option value="blue">Blue</option>
-                <option value="indigo">Indigo</option>
-                <option value="violet">Violet</option>
-                <option value="black">Black</option>
-                <option value="brown">Brown</option>
-                <option value="grey">Grey</option>
-                <option value="white">White</option>
-            </select>
-            <br/><br/>
-            <label for="myStyle">Favorite Style:</label>
-            <select id="myStyle" name="myStyle" required>
-                <option value="mulligan">Mulligan</option>
-                <option value="slalom">Slalom</option>
-                <option value="trapper">Trapper</option>
-                <option value="mariner">Mariner</option>
-                <option value="sidewinder">Sidewinder</option>
-                <option value="other">Other</option>
-            </select>
-            <br/><br/>
-            <label for="myComments"><div class="labelHeightFix">Comments:</div></label><textarea id="myComments" name="myComments" rows="2" cols="22" ></textarea>
-            <button type="submit" class="btn btn-outline-dark" onclick="testResults(this.form)">Submit</button>
+            <br><br><br>
+        <h2>My Albums are for Sale</h2>
+        <form id="albumSelection">
+            <input id="yss" type="number" value="0"><label for="yss">You're So Suburban (2006)</label><br>
+            <input id="fandf" type="number" value="0"><label for="fandf">Family and Friends (2007)</label><br>
+            <input id="dsn" type="number" value="0"><label for="dsn">Don't Stop Now (2008)</label><br>
+            <input id="obd" type="number" value="0"><label for="obd">On Being Different (2010)</label><br>
+            <input id="ppt" type="number" value="0"><label for="ppt">People, Places, and Things (2013)</label><br>
+            <input id="rim" type="number" value="0"><label for="rim">It's Raining in Milwaukee (2015)</label><br>
+            <input id="heartland" type="number" value="0"><label for="heartland">Heartland (2018)</label><br><br>
+            <button class=".btn">Next</button>
         </form>
-            <SCRIPT LANGUAGE="JavaScript">
-                function testResults (form) {
-                    var name = form.myName.value;
-                    var address = form.myAddress.value;
-                    var phone = form.myPhone.value;
-                    var email = form.myEmail.value;
-                    var color = form.myColor.value;
-                    var style = form.myStyle.value;
-                    var comments = form.myComments.value;
-                    if(form.myComments.value === "") {
-                        alert("Your Name: " + name + "\nYour Address: " + address + "\nYour Phone: " + phone + "\nYour Email: " + email + "\nYour Color: " + color + "\nYour Style: " + style);
-                    }
-                    else { alert("Your Name: " + name + "\nYour Address: " + address + "\nYour Phone: " + phone + "\nYour Email: " + email + "\nYour Color: " + color + "\nYour Style: " + style + "\nYour Comment: " + comments);}
-
-                    }
-            </SCRIPT>
-            <span><footer><div><a href="index.html">Home</a>
-                <a href="styles.html">Styles</a>
-                <a href="contact.html">Contact</a>
-                <a href="about.html">About</a></div><br/>Copyright &copy; No More Cold Heads<br/><a href="mailto:whueston@my.wctc.edu">whueston@my.wctc.edu</a></footer>
-        </span>
+        <form id="shipInfo">
+            <table id="visualCart"></table>
+        </form>
+        <footer><div><a href="index.html">Home</a>
+            <a href="styles.html">Music</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">Q&A</a></div><br/>Copyright &copy; The Acetabulums<br/><a href="mailto:whueston@my.wctc.edu">whueston@my.wctc.edu</a>
+        </footer>
         </main>
     </div>
 
 </body>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
+<script src="contact.js"></script>
 </html>
