@@ -25,20 +25,83 @@
         <main>
         <div id="navspacer"></div>
             <br><br><br>
-        <h2>My Albums are for Sale</h2>
+        <h2>Album Sales</h2>
         <form id="albumSelection">
-            <input id="yss" type="number" value="0"><label for="yss">You're So Suburban (2006)</label><br>
-            <input id="fandf" type="number" value="0"><label for="fandf">Family and Friends (2007)</label><br>
-            <input id="dsn" type="number" value="0"><label for="dsn">Don't Stop Now (2008)</label><br>
-            <input id="obd" type="number" value="0"><label for="obd">On Being Different (2010)</label><br>
-            <input id="ppt" type="number" value="0"><label for="ppt">People, Places, and Things (2013)</label><br>
-            <input id="rim" type="number" value="0"><label for="rim">It's Raining in Milwaukee (2015)</label><br>
-            <input id="heartland" type="number" value="0"><label for="heartland">Heartland (2018)</label><br><br>
-            <button class=".btn">Next</button>
+            <input id="yss" type="number" value="0" min="0"><label for="yss">You're So Suburban (2006) - $7.00</label><br>
+            <input id="fandf" type="number" value="0" min="0"><label for="fandf">Family and Friends (2007) - $7.00</label><br>
+            <input id="dsn" type="number" value="0" min="0"><label for="dsn">Don't Stop Now (2008) - $7.00</label><br>
+            <input id="obd" type="number" value="0" min="0"><label for="obd">On Being Different (2010) - $7.00</label><br>
+            <input id="ppt" type="number" value="0" min="0"><label for="ppt">People, Places, and Things (2013) - $7.00</label><br>
+            <input id="rim" type="number" value="0" min="0"><label for="rim">It's Raining in Milwaukee (2015) - $10.00</label><br>
+            <input id="heartland" type="number" value="0" min="0"><label for="heartland">Heartland (2018) - $15.00</label><br><br>
+            <button class="btn">Next</button>
         </form>
         <form id="shipInfo">
             <table id="visualCart"></table>
+            <br><br>
+            <input id="firstNameShipping" type="text" required="required">
+            <input id="lastNameShipping" type="text" required="required"><br>
+            <label for="firstNameShipping" id="nameSidebySide">First Name</label>
+            <label for="lastNameShipping">Last Name</label><br>
+
+            <input id="addressOneShipping" type="text" required="required">
+            <input id="addressTwoShipping" type="text"><br>
+            <label for="addressOneShipping" id="addressSidebySide">Address Line One</label>
+            <label for="addressTwoShipping">Address Line Two</label><br><br>
+
+            <input id="cityShipping" type="text" required="required"><br>
+            <label for="cityShipping">City</label><br>
+            <input id="stateShipping" type="text" required="required"><br>
+            <label for="stateShipping">State</label><br>
+            <input id="zipCodeShipping" type="text" required="required"><br>
+            <label for="zipCodeShipping">Postal Code</label><br><br>
+
+            <input id="emailShipping" type="email" required="required">
+            <input id="phoneShipping" type="tel"><br>
+            <label for="emailShipping" id="contactSidebySide">Email Address</label>
+            <label for="phoneShipping">Phone Number</label>
+            <button class="btn">Next</button>
+
         </form>
+        <form id="billingInfo">
+            <table id="billingCart"></table>
+            <br><br>
+            <h5>Credit Card Type</h5>
+            <input type="radio" name="card" id="mastercard" data-card="Mastercard" checked="checked" ><label for="mastercard">Mastercard</label><br>
+            <input type="radio" name="card" id="visa" data-card="Visa"><label for="visa">Visa</label><br>
+            <input type="radio" name="card" id="discover" data-card="Discover"><label for="discover">Discover</label><br>
+            <input type="radio" name="card" id="amEx" data-card="American Express"><label for="amEx">American Express</label><br><br>
+            <input type="text" id="cardNumber" required="required" maxlength="19" minlength="13"><br><label for="cardNumber">Card Number</label><br>
+
+            <input type="month" id="expiration" required="required">
+            <input type="number" id="securityCode" required="required" maxlength="4"><br>
+            <label for="expiration" id="billingSidebySide">Expiration Date</label>
+            <label for="securityCode">Security Code</label><br>
+
+            <input type="text" id="billingZip" required="required"><br><label for="billingZip">Zip Code</label>
+            <button class="btn">Next</button>
+        </form>
+            <form action="mailto:whueston@my.wctc.edu" method="post" enctype="text/plain" id="confirmPage">
+                <table id="confirmCart"></table><br><br>
+                <input id="firstAndLast" required="required" type="text" name="FirstAndLast"><br>
+                <label for="firstAndLast">First and Last Name</label><br>
+                <input id="addressOneTwo" required="required" type="text" name="Address"><br>
+                <label for="addressOneTwo">Address</label><br>
+                <input id="cityStateZip" required="required" type="text" name="CityStateZip"><br>
+                <label for="cityStateZip">City, State, and Postal Code</label><br><br>
+                <input id="cardTypeNumber" required="required" type="text" name="CardTypeNumber"><br>
+                <label for="cardTypeNumber">Card Type and Number</label><br>
+                <input id="expirationSecurity" required="required" type="text" name="ExpirationAndSecurity"><br>
+                <label for="expirationSecurity">Expiration Date and Security Code</label>
+                <input id="zip" required="required" type="text" name="BillingPostalCode"><br>
+                <label for="zip">Billing Postal Code</label><br><br>
+                <input id="orderButton" type="submit" value="Place Order">
+            </form>
+            <div id="thanksPage">
+                <h4 style="text-align: center">Thanks for making a purchase!</h4>
+                <h6 style="text-align: center">I'll be in touch soon!</h6>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            </div>
         <footer><div><a href="index.html">Home</a>
             <a href="styles.html">Music</a>
             <a href="contact.html">Contact</a>
